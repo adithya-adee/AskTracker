@@ -24,6 +24,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Trash2, Edit, Plus, LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
+// Import the AI chat button component
+import { AiChatButton } from "./ai";
 
 interface User {
   id: number;
@@ -271,6 +273,9 @@ export default function FeedbackPage() {
                 </form>
               </DialogContent>
             </Dialog>
+
+            {/* Add the AI Chat Button here */}
+            <AiChatButton />
 
             <Button
               variant="outline"
